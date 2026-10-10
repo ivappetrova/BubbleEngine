@@ -3,7 +3,7 @@
 
 <!-- Game Title -->
 <h2 align="center">Bubble Engine</h2>
-<h3 align="center">Made by Iva Petrova, 2DAE11 </h3>
+<h3 align="center">Made by Iva Petrova</h3>
 
 <img width="1448" height="1086" alt="BubbleEngine" src="https://github.com/user-attachments/assets/ee55d6b5-7035-46c6-9493-e7093679b99c" />
 
@@ -13,17 +13,16 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li> <a href="#about-the-game">About the game</a> </li>
+    <li> <a href="#about-the-game">Bubble Bobble</a> </li>
 	 <li> <a href="#controls">Controls</a> </li>
-     <li> <a href="#design-choices">Design Choices</a> </li>
-	  <li> <a href="#contacts">Contacts</a> </li>
+     <li> <a href="#engine-design-choices">Engine Design Choices</a> </li>
   </ol>
 </details>
 
-<!-- About the game -->
-# About the game
+<!-- Bubble Bobble -->
+# Bubble Bobble
 
-Bubble Bobble is all about a green dragon named Bub and a blue dragon named Bob, who need to save their girlfriends from a world known as the Cave of Monsters. 
+Bubble Bobble is a game about a green dragon named Bub and a blue dragon named Bob, who need to save their girlfriends from a world known as the Cave of Monsters. 
 In each level, Bub and Bob must defeat each enemy present by trapping them in bubbles blown from their mouths and then popping the bubbles. 
 
 I implemented the first 3 levels of the game. In my implementation there are 3 modes:
@@ -58,10 +57,9 @@ I implemented the first 3 levels of the game. In my implementation there are 3 m
 - Right shoulder - skip level
 - Back - go to menu
 
-<!-- Design Choices -->
-# Design Choices — Game Programming Patterns by Robert Nystrom
-
-## Mandatory Patterns
+<!-- Engine Design Choices -->
+# Engine Design Choices 
+Credits to Game Programming Patterns by Robert Nystrom
 
 ### Game Loop
 - `Minigin::RunOneFrame()` uses a fixed timestep with variable rendering
@@ -106,8 +104,6 @@ I implemented the first 3 levels of the game. In my implementation there are 3 m
 - `TakeDmgState` — applies knockback and invincibility on enter, waits out the timer
 - `FallState` — allows air movement, transitions to idle on landing
 
-## Extra Patterns
-
 ### Service Locator
 - `ServiceLocator.h` provides a global access point to the active `ISoundSystem`
 - Defaults to `NullSoundSystem` so the system is always in a valid state even before registration
@@ -139,8 +135,3 @@ I implemented the first 3 levels of the game. In my implementation there are 3 m
 - Instead of one subclass per enemy, a single `EnemyComponent` holds a pointer to a shared, immutable `EnemyType` data object loaded from JSON
 - The type defines what the enemy looks like and how big it is
 - Adding a new enemy variant is purely a data change
-
-<!-- Contacts -->
-## Contacts
-* [Github- Iva Petrova](https://github.com/ivappetrova/ivappetrova_prog4)
-* email: - iva.petrova@student.howest.be
