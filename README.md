@@ -7,18 +7,6 @@
 
 <img width="1448" height="1086" alt="BubbleEngine" src="https://github.com/user-attachments/assets/ee55d6b5-7035-46c6-9493-e7093679b99c" />
 
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li> <a href="#about-the-game">Bubble Bobble</a> </li>
-	 <li> <a href="#controls">Controls</a> </li>
-     <li> <a href="#engine-design-choices">Engine Design Choices</a> </li>
-  </ol>
-</details>
-
 <!-- Bubble Bobble -->
 # Bubble Bobble
 
